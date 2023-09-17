@@ -55,8 +55,10 @@
 #                                                                              #
 ################################################################################
 
-from distutils.core import setup, Extension
+from distutils.core import setup
+
 setup(name='protocol',
       version='0.1',
-      scripts=['protocol', 'constants.py', 'specs.py']
+      scripts=['protocol'],
+      py_modules=['constants', 'specs']
       )
